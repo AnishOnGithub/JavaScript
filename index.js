@@ -151,3 +151,54 @@
 // to add amazon at the end 
 // companies.push("Amazon")
 // console.log(companies)
+
+
+//functions -->does a same and perticular work inside a code like .log, .touppercase and ends with () 
+//with function we dont need to repeat the same code again and again just by typing the function we can get the code
+//myIndex acts as a calling statement 
+
+// function myIndex(message){
+// //    console.log("Anish")
+//     console.log(message)
+// }
+// myIndex("i love js");
+
+//sum using functions 
+
+// function sum(a,b){
+//   s=a+b
+//   return s;
+// }
+
+// function mult(a,b){
+//     return a*b
+// }
+
+
+//arrow function --> compact way for writting a function
+
+// const arrow=(a,b)=>{
+//     console.log(a+b)
+// }
+// console.log(arrow)
+
+// const printHello=() =>{
+//     console.log("hello")
+// }
+
+//Q) Create a function using the "function" keyword that takes a string as an argumwnt and returns the number of vowel in the string 
+
+function countVowels(str){
+    let count=0;
+    for(const char of str){
+       
+        
+        if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"){
+            count++
+           
+        }
+       
+    }
+    
+    console.log(count)
+}
