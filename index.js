@@ -101,7 +101,7 @@
 
 
 
-//concat --> joins multiple arrays and returns a new one 
+//concat --> joins multiple arrays and returns a new one
 
 
 //  let fruit=["apple", "banana", "kiwi"];
