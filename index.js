@@ -188,17 +188,91 @@
 
 //Q) Create a function using the "function" keyword that takes a string as an argumwnt and returns the number of vowel in the string 
 
-function countVowels(str){
-    let count=0;
-    for(const char of str){
+// function countVowels(str){
+//     let count=0;
+//     for(const char of str){
        
         
-        if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"){
-            count++
+//         if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"){
+//             count++
            
-        }
+//         }
        
-    }
+//     }
     
-    console.log(count)
-}
+//     console.log(count)
+// }
+
+
+//forEach function--> directly used for aarays as wel as strings
+
+// let array=[1,2,3]
+
+// array.forEach(function printVal(num){
+//     console.log(num);
+// });
+
+
+
+// //using arrow
+
+// arrays.forEach((val)=>{
+//     console.log(val.toUpperCase());
+// })
+
+
+//Higher order function--> functions which take have other parameters inside of them or return another function as their output like forEach
+
+//Q) for an array of number print the square for each value using forEach loop
+
+// val=[1,2,3,4,5]
+
+// val.forEach((num)=>{
+//     console.log(num*num)
+// })
+
+// val= [1,2,3,4,5]
+
+// val.forEach(function sq(num){
+//    console.log(num*num)
+// })
+
+
+//map function--> used to create a new array which is 
+// let nums=[1,2,3,4,5]
+// newArray=nums.map((val)=>{
+//     console.log(val*val)
+// })
+
+// console.log(nums)
+
+
+//filter methods--> used to arrange and filterate array indices  
+
+// let numbers=[1,2,3,4,5,6,7,8,9]
+// let evenNos=numbers.filter((val)=>{
+//     return val%2===0
+// })
+// console.log(evenNos) 
+
+
+//Reduce method--> performs some operation and reduces the array to a single value 
+
+// numArray=[1,2,3];
+// numSum=(numArray.reduce((result,current)=>{
+//     return result > current ?  result: current
+
+// }
+// ))
+// console.log(numSum)
+
+
+// addition using reduce function
+
+// numArray=[1,2,3,4,5,6,7,8,9]
+
+// sum=(numArray.reduce((previous,result)=>{
+//     return previous+result
+// }
+// ))
+// console.log(sum)
