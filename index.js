@@ -276,3 +276,41 @@
 // }
 // ))
 // console.log(sum)
+
+//Practice questions on arrays and functions 
+
+//1) Filter out marks of students that scored more than 90 marks 
+
+// marks=[80,79,97,96,58,92]
+// val=(marks.sort((i)=>{
+// return i>90;
+// }))
+// console.log(val)
+
+//2) Take a number n as a input from user. Create an array of number from 1 to n. Use the reduce method to calculate the sum of all numbers in the array. Use the reduce methond to calculate product of all the numbers in the array 
+
+// let n=prompt("Enter a number: ");
+
+// let array=[];
+//  for(let i=0;i<=n;i++){
+//     array[i]=i;
+//  }
+
+//  console.log(array)
+
+//  finalSum=(array.reduce((previous,result)=>{
+//     return previous+result
+//  }))
+
+//  console.log("Sum of the numbers is ",finalSum)
+
+//  //product 
+
+//  finalproduct=(array.reduce((previous,result)=>{
+//     return previous*result
+//  }))
+
+//  console.log("Product of the numbers is ", finalproduct)
+
+
+ 
