@@ -312,5 +312,5 @@
 
 //  console.log("Product of the numbers is ", finalproduct)
 
+//DOM-Document Object Model
 
- 
