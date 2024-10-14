@@ -299,7 +299,7 @@
 //  console.log(array)
 
 //  finalSum=(array.reduce((previous,result)=>{
-//     return previous+result
+//     return previous+result 
 //  }))
 
 //  console.log("Sum of the numbers is ",finalSum)
@@ -312,5 +312,91 @@
 
 //  console.log("Product of the numbers is ", finalproduct)
 
-//DOM-Document Object Model
 
+//---------------------------------------------------------------------
+//---------------------------------------------------------------------
+
+
+//DOM-Document Object Model
+//dom is a way to access html code through javascript, it has a tree like structure in which it stores all elements of html
+
+// console.log(document.body) //prints all the cod ein html body as it is 
+// console.dir(document.body) //prints all functions availble in html js 
+
+
+//accessing elements
+//1) getElementById gives functions a unique id
+
+// let heading=document.getElementById("h1Tag")
+// console.dir(heading)
+
+
+
+//2) getElementsByClassName allows to group multiple functions by giving a same class
+
+// let heading=document.getElementsByClassName("intro")
+// console.dir(heading)
+
+
+
+//3) getElementsByTagName allows to edit all the elements with a standard tag like p, h1, h2,etc
+
+// let heading=document.getElementsByTagName("p")
+// console.dir(heading)
+
+
+// 4) querySelectorAll allows to use all the functions like tag, class, id together 
+//returns node list
+
+// let Tags=document.querySelector("p")
+// console.dir(Tags)
+// console.log(Tags)
+
+
+//Properties of elements
+
+// 1) tagName --> used to print the tag of a specific function
+
+// let Tags=document.querySelector("#intro1")
+// console.log(Tags.tagName)
+
+
+
+
+// 2)innerText= returns text context and children of the elements
+
+// inner text has  3 types--> i)element, ii) comment iii)text but element node is generally of more use 
+
+// let text=document.querySelector("body").lastChild;
+// console.dir(text);
+
+
+
+
+//3)  InnerHtml--> prints the code of html aswel inclusing the inner text
+// let text=document.querySelector("body").innerHTML;
+// console.dir(text)
+
+//4) textContent--> shows the hidden elements on console tab
+
+
+//Q1
+// let heading=document.querySelector("h2")
+// console.dir(heading)
+
+// heading.innerText=heading.innerText+" from earth"
+
+let heading=document.querySelectorAll(".box")
+// console.log(heading)
+// heading[0].innerText="new heading 1"
+// heading[1].innerText="new heading 2"
+// heading[2].innerText="new heading 3"
+
+//using loops
+let i=0
+for(div of heading){
+ 
+    div.innerText=("New Value "+ i)
+    i++
+    console.dir(div.innerText)
+}
