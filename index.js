@@ -386,17 +386,74 @@
 
 // heading.innerText=heading.innerText+" from earth"
 
-let heading=document.querySelectorAll(".box")
-// console.log(heading)
-// heading[0].innerText="new heading 1"
-// heading[1].innerText="new heading 2"
-// heading[2].innerText="new heading 3"
+// let heading=document.querySelectorAll(".box")
+// // console.log(heading)
+// // heading[0].innerText="new heading 1"
+// // heading[1].innerText="new heading 2"
+// // heading[2].innerText="new heading 3"
 
-//using loops
-let i=0
-for(div of heading){
+// //using loops
+// let i=0
+// for(div of heading){
  
-    div.innerText=("New Value "+ i)
-    i++
-    console.dir(div.innerText)
-}
+//     div.innerText=("New Value "+ i)
+//     i++
+//     console.dir(div.innerText)
+// }
+
+// let docVal= document.querySelector("link")
+// console.dir(docVal)
+
+//getArrtribute prints the value of the attribute
+
+// let atrributeVal=docVal.getAttribute("rel")
+// console.dir(atrributeVal)
+// let atrributeVal2=docVal.getAttribute("href")
+// console.dir(atrributeVal)
+
+//setAttribute --> This element is used to change the value of the atrribute
+
+// let docVal= document.querySelector("div")
+// console.dir(docVal)
+
+// let atrributeVal=docVal.setAttribute("class","className")
+// console.dir(atrributeVal)
+// console.dir(body)
+
+
+//style attribute--> gives the css code/ gives the styling of a node 
+
+// let style= document.querySelectorAll("div")
+// style.forEach(div => {
+//     div.style.backgroundColor="blue"
+// });
+
+//Insert Elments--> This allows the user to insert elelments--> 4 types
+
+//node.append(element)--> adds at the end of node (inside)
+//node.prepend(element)--> adds at the start of node (inside)
+//node.before(element)--> adds at the end of node (inside)
+//node.after(element)--> adds at the start of node (outside)
+
+// let button=document.createElement("h1")
+// button.innerText="Punch me!"
+
+// let div=document.querySelector("div1")
+// div.prepend(button)
+// console.log(button)
+
+//node.remove --> To remove any element
+// let para=document.querySelector("div1")
+// para.remove()
+
+//q1 
+// let newBtn=document.createElement("button")
+// newBtn.innerText="Click me"
+// console.log(newBtn)
+
+// newBtn.style.backgroundColor="blue"
+// newBtn.style.color="white"
+// console.log(newBtn)
+// document.querySelector("body").append(newBtn)
+
+//classList-->list of all classes of the element-->adds styling from css
