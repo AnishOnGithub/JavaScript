@@ -457,3 +457,45 @@
 // document.querySelector("body").append(newBtn)
 
 //classList-->list of all classes of the element-->adds styling from css
+
+
+
+//events--> This gives the website a dynamic touch
+
+// btn1=document.querySelector("#btn")
+// btn1.style.backgroundColor="blue"
+// btn.onmouseover=(event)=>{
+//     console.log(event)
+//     console.log(event.type)
+//     console.log(event.clientX,event.clientY)
+// }
+
+//event listners-->allows to use multiple events on a element 
+//removeeventListener--> example below
+// const eventhandler=()=>{
+//     console.log("button 1 was clicked")
+// }
+// btn.addEventListener("click",eventhandler)
+// btn.removeEventListener("click",eventhandler)
+
+//q1) create a button which turns light annd dark mode on or off
+
+// btn1=document.querySelector("button")
+// console.dir(btn1)
+
+// let screenColour="light"
+
+// btn1.addEventListener("click",()=>{
+//     if(screenColour==="light"){
+//         screenColour="dark"
+//         document.querySelector("body").style.backgroundColor="black"
+        
+//     }
+//     else{
+//         screenColour="light"
+//         document.querySelector("body").style.backgroundColor="white"
+        
+//     }
+//     console.log(screenColour)
+// })
+
