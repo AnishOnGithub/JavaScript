@@ -499,3 +499,122 @@
 //     console.log(screenColour)
 // })
 
+
+
+// ------------------------------------------------
+
+
+//largest number
+
+// let numbers=[22,23,24,25,26]
+
+
+// let largest = numbers[0];
+// for( let i=1; i<numbers.length;i++){
+//     if (numbers[i]>largest){
+//         largest=numbers[i];
+//     }
+    
+// }
+
+// console.log(largest)
+
+
+//To print names of male gender
+
+// let userNames=["Anish","Rahul","Priya"]
+// let gender=["Male","Male","Female",]
+
+// for(let i=0;i<userNames.length;i++){
+//     if (gender[i]=="Male"){
+//         console.log(userNames)
+//     }
+// }
+
+//complex and structured way to solve this 
+
+// const userNames=[{
+//     firstName:"Anish",
+//     age:"18"
+// },{
+//     firstName:"Rahul",
+//     age:"32"
+// },{
+//     firstName:"Priya",
+//     age:"32"
+// }]
+
+// for(let i=0;i<userNames.length;i++){
+//     if(userNames[i]["age"]>18){
+//         oldPeople=("Old people are ",userNames[i]["firstName"])
+//         console.log(oldPeople)
+//     }
+    
+// }
+
+//program to reverse all elements of a given array
+// let numbers=[1,2,3,4]
+// let reverNum=[];
+// for(let i=numbers.length-1;i>=0;i--){
+//     reverNume
+// }
+
+//function inside a function
+
+// function sum(num1, num2, fnToCall){
+//     let result=num1+num2
+//     fnToCall(result);
+// }
+
+// function displayScreen(){
+//     console.log("result")
+//  }
+//  function displayConsole(){
+//     console.dir("noResult")
+//  }
+
+// let answer=sum(1,2,displayConsole)
+
+
+
+
+// function sumResult(num1,num2,functionx){
+//     let sum=num1+num2;
+//     functionx(sum);
+// }
+
+// function difResult(num1,num2,functionx){
+//     let diff=num1-num2;
+//     functionx(diff)
+    
+// }
+// function chooseRelsult(result){
+//     console.log(result)
+// }
+
+// difResult(5,2,chooseRelsult) 
+
+//upper same code but using a single function
+
+// function operations(a,b,type){
+//     if (type=="sum"){
+//         result=(a+b)
+//         return result
+//     }
+//     if (type=="minus"){
+//         result=(a-b)
+//         return result
+
+//     }
+// }
+
+// let user=operations(1,2,"sum")
+// console.log(result);
+
+//setTimeout fxn
+
+// function greetings(){
+//     console.log("hello")
+// }
+
+// setTimeout(greetings, 3*1000) 
