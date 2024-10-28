@@ -618,3 +618,169 @@
 // }
 
 // setTimeout(greetings, 3*1000) 
+
+
+//inbuilt functions--> Strings
+
+//1)getLength
+// function getLength(str){
+//     console.log("string: ",str)
+//     console.log("length:",str.length)
+// }
+// getLength("hello world")
+
+//2)indexOf
+
+// function findIndexOf(str,position){
+//     console.log("string: ",str)
+//     console.log("position", str.findIndexOf(position))
+// }
+// findIndexOf("Hello its Anish, welcome to my js code","welcome") 
+
+//3)lastIndexOf (WHEN A TARGETED WORD IS PRESENT MORE THAN ONE TIME )
+
+// function lastIndex(str,target){
+//     console.log("string: ",str)
+//     console.log("the position is: ",str.lastIndexOf(target))
+
+// }
+
+// lastIndex("hello i am anish anish anish","anish")
+
+//4)slice--> gives piece of code between 2 indices
+
+// function getSLice(str,index1,index2){
+//     console.log("string: ",str)
+//     console.log("After slice: ",str.slice(index1,index2))
+// }
+// getSLice("hello world",0,4)
+
+//slice-->code
+// function cutIt(str,start,end){
+//     let newStr="";
+//     for(let i=0;i<str.length;i++){
+//         if(i>=start,i<=end){
+//           newStr=newStr+str[i]
+            
+//         }
+//     }console.log(newStr)
+// }
+// cutIt("Anish is my name",0,2)
+
+//5)replace
+// const lol="hello world"
+// console.log(lol.replace("o","js"))
+
+//6)Split
+// const value= "I,am,Anish"
+// const words= value.split(",")
+// console.log(words);
+
+
+//7)Trim--> remove spaces from start and end
+// const value="      Hello Javascript         "
+// console.log(value.trim())
+
+//8)toUpperCase & toLowerCase
+// const value="Hello Javascript"
+// console.log(value.toLowerCase())
+
+//9)parseInt--> converts string to nummber type, ignores words written after a number,ignores decimal
+
+// let num="6.3fdgshj"
+// console.log(parseInt(num))
+
+//10)parseFloat--> like parseInt but prints decimal aswel
+
+// console.log(parseFloat(num))
+
+
+
+//functions for arrays 
+
+//11)push--> adds element in array at the end
+//12)shift--> adds element in array at the start
+
+// const initialArray=[1,2,3];
+// initialArray.push(5);
+// console.log(initialArray)
+
+//13)pop--> removes element in array at the end
+//14)unshift--> removes element in array at the start
+
+// initialArray.pop()
+// console.log(initialArray)
+
+//15)concat--> used to club two arrays
+
+// let array1=[1,1,1]
+// let array2=[2,2,2]
+// console.log(array1.concat(array2))
+
+// function log1(){
+//     console.log("hello js")
+// }
+
+// function log2(){
+//     console.log("hello anish")
+// }
+
+// function fnSelector(fn){
+//     fn()
+// }
+
+// fnSelector(log2)
+
+//16) forEach
+// let array=[2,3,4,9]
+
+// for (let i=0;i<array.length;i++){
+//    array[i]=array[i]+1
+    
+// }
+// console.log(array)
+
+// array=[1,2,3,4]
+// function insider(x){
+//     console.log(x+"lol")
+
+// }
+// array.forEach(insider)
+
+
+
+
+//class
+// let dog={
+//     name:"tofu",
+//     numLegs:"4",
+//     speaks: "bhow bhow"}
+
+//  let cat={
+//   name:"paneer",
+//   numLegs:"4",
+//   speaks: "meow meow"}
+
+//   function animalInfo(animal){
+//    console.log("animal "+ animal["name"]+ " "+animal["speaks"])
+//   }
+    
+// animalInfo(cat)
+
+//using classes
+
+// class animals{
+//     constructor(name, legCount, language){
+//         this.name=name;
+//         this.legCount=legCount;
+//         this.language=language;
+//     }
+//     language(){
+//         console.log("hello ", this.language)
+//     }
+// }
+
+// let dog= new animals("dog",4,"bhaw bhaw")
+// let cat= new animals("cat",4,"meow meow")
+
+// console.log("hi there "+dog.language)
