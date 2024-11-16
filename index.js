@@ -762,7 +762,7 @@
 //   speaks: "meow meow"}
 
 //   function animalInfo(animal){
-//    console.log("animal "+ animal["name"]+ " "+animal["speaks"])
+//    console.log("animal "+ animal["name"]+ " "+"\n","It speaks ",animal["speaks"])
 //   }
     
 // animalInfo(cat)
@@ -784,3 +784,151 @@
 // let cat= new animals("cat",4,"meow meow")
 
 // console.log("hi there "+dog.language)
+
+
+// static  functions--> they can be used on a whole class only,  not on  
+
+
+
+//Date class in js
+
+// const currentDate = new Date();
+// console.log(currentDate.getMonth()+1)
+//  console.log(currentDate.getFullYear());
+
+//time taken to execute a program
+
+// function calculateSum(){
+//      let sum=0;
+//      for(i=0;i<=1000 ;i++)
+//         sum=sum+i;
+//     console.log("sum=",sum)
+// }
+
+// const beforeDate=new Date();
+// const beforeTime=beforeDate.getTime()
+
+// calculateSum()
+
+// const afterDate=new Date();
+// const afterTime=afterDate.getTime();
+
+// console.log(afterTime-beforeTime)
+
+
+//JSON--> stores data and does client-server communication
+// const user={
+//     userName:"anish",
+//     age:18,
+//     gender: "male"
+// }
+
+// const finalStr=JSON.stringify(user)
+// console.log(user["userName"])
+
+
+// function numSq(x){
+//     return x*x
+// }
+
+// function numCube(x){
+//     return x*x*x
+// }
+
+// function sqAdd(a,b,fn){
+//      a = fn(a)
+//      b = fn(b)
+//     return a+b
+// }
+// console.log(sqAdd(2,3,numCube))
+
+
+//Sync And Aync  functions 
+
+//sync functions--> can perform only one task at a time --> things happen one after the other 
+
+//async functions--> does various tasks and dosent wait for a task to render, as in it renders the next code 
+
+//example for a async function--> setTimeout, readFile
+
+// fs.readFile("temp.txt", "utf-8", function(err, data) {
+//     if (err) {
+//         console.error("Error reading file:", err);
+//         return;
+//     }
+//     console.log(data);
+// });
+
+
+// let array=[1,2,3,4,5]
+// let target=6;
+
+// for( let i=0;i<array.length;i++){
+//     for( let j=0;j<array.length;j++){
+//     if(array[i]+array[j]===target){
+//         console.log(array[j], array[i])}
+//     }
+    
+// }
+
+// const currentMonth=new Date();
+// console.log(currentMonth.getMonth());
+
+
+// callbacks revision
+// function square(n){
+//     return n*n
+// }
+// function cube(n){
+//     return n*n*n
+// }
+
+// function powerSum(a,b,fn){
+//     let val1=fn(a);
+//     let val2=fn(b);
+//     return val1+val2
+// }
+// let result=powerSum(3,4,square);
+// console.log(result)
+
+//sum of 2 areas 
+// function areaCircle(a){
+    
+//     return 3.14*a*a
+// }
+// function areaRec(a,b){
+    
+//     return a*b
+// }
+// function areaTri(a,b){
+    
+//     return 0.5*a*b
+// }
+
+// function areaSum(a,b,c,d,fn,fn2){
+//     let val1= fn(a,b);
+//     let val2=fn2(c,d)
+//     let result= val1+val2
+//     return result
+// }
+// let result=area(1,2,3,4,areaTri,areaCircle)
+// console.log(result)
+
+// function sum(a,b){
+//     let sum=a+b
+//     return sum
+// }
+// console.log(sum(1,2))
+
+// let ans =0;
+// for(let i=0;i<=100;i++){
+//     ans= ans + 1; 
+// }
+// console.log(ans)
+
+// console.log("hi")
+// function onDone(){
+//     console.log("Click me")
+// }
+// setTimeout(onDone,5000)
+// console.log("welcome to js")
