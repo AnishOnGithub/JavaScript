@@ -932,3 +932,72 @@
 // }
 // setTimeout(onDone,5000)
 // console.log("welcome to js")
+
+//promises--> cleaner way to write async callbacks
+
+//created my own async function myTimeout
+
+// function myTimeout(fn,duration){
+//     setTimeout(fn,duration)}
+
+//  function jds(){
+//         console.log("hi")
+//     }
+
+// myTimeout(jds,5000)
+
+// function promiseFirst(callback,duration){
+//     setTimeout(callback,duration)
+// }
+// function promisified(duration){
+//     const p=new Promise(function(resolve){
+//         setTimeout(function(){
+//             resolve()
+//         },duration)
+//     });
+//     return p
+// }
+
+// let details={
+//     name: "Anish",
+//     marks: "Default ",
+//     age: 18,
+//     printMarks: function(){
+//         return "marks = "+this.marks + "Age= "+this.age
+//     }
+// }
+// console.log(details.printMarks())
+
+//prototypes in js --> its used to inherit data and function from one object to another, object is a group of functions and methods
+
+// const employee={
+//     salary(){
+//         return "80000"
+//     }
+// }
+// const employee2={
+//     salary(){
+//         return "90000"
+//     }
+// }
+// employee.__proto__=employee2
+
+//classes in js --> makes blueprint for an object or makes a template for them 
+
+// class toyotaCar{
+//      start(){
+//         console.log("start")
+//      }
+//      stop(){
+//         console.log("stop")
+//      }
+//      setBrand(brand){
+//         this.brandName=brand;
+//      }
+// }
+// //new converts class to object
+// let fortuner = new toyotaCar()
+// fortuner.setBrand("fotunerModel")
+// let lexus = new toyotaCar()
+// lexus.setBrand("lexusModel")
+
